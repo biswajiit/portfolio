@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-8">
+        <div class="container left-rail">
+            <br>
+            <div class="row">
+              <h4 class="font-weight-bold">Blogs<hr></h4>
+            </div>
+            <div class="row">
+                <div class="container">
+                  <div *ngFor="let blog of blogs">     
+                    <h3>{{blog.heading}}</h3>
+                    <p>{{blog.detail}}</p>
+                  </div>
+                </div>    
+            </div>
+          </div>          
+    </div>
+    <div class="col-sm-3">
+        <div class="container right-rail">
+            <br>
+            <div class="row">               
+                <h4 class="font-weight-bold">Blog Archives<hr></h4>
+            </div>
+            <div *ngFor="let blog of blogs">               
+                  <p>{{blog.heading}}</p>
+            </div>
+        </div>          
+    </div>
+  </div>
+</div>
