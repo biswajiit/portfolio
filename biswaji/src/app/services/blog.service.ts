@@ -15,7 +15,6 @@ export class BlogService {
     });
     console.log(this.blogs);
     return this.blogs;
-    
   }
 
 }
