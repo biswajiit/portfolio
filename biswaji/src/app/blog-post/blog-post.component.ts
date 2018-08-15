@@ -14,8 +14,13 @@ export class BlogPostComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.blogs = this.svc.getAllBlogs();
-    console.log(this.blogs);
+    this.getAllBlogs();
   }
 
+  getAllBlogs(){
+    let obs = this.svc.getAllBlogs();
+    obs.subscribe((response) => {
+      this.blogs = response;
+    })
+  }
 }
