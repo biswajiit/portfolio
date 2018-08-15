@@ -14,7 +14,8 @@ export class BlogPostComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.blogs= [new Blog("1","abc") , new Blog("2","abc") , new Blog("3","abc") ];
+    this.blogs = this.svc.getAllBlogs();
+    console.log(this.blogs);
   }
 
 }
