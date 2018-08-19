@@ -39,9 +39,9 @@ export class BlogPostComponent implements OnInit {
     }
   }
 
-  showCurrentBlog(){
+  showCurrentBlog(blog){
     this.showBlog = true;
-    this.onShowBlog.emit(this.showBlog);
+    this.blog = blog;
   }
 
 

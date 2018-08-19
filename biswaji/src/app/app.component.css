@@ -1,15 +1,6 @@
-.profile-pic{
-    width:121px;
-    height:121px;
-    border-radius: 50%;
+.left{
+    float:left;
 }
-.profile-pic-outer{
-    padding: 5px;
-    width:131px;
-    height:131px;
-    border-radius: 50%;
-    background-color: white;
-}
-.hide-div{
-    display :none;
+.right{
+    float:right;
 }
