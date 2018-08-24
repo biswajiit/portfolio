@@ -2,44 +2,55 @@
   <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-8">
-        <div class="container">
-            <br>
-            <div class="row">
-              <h4 class="font-weight-bold">Blogs<hr></h4>
+      <div class="container">
+        <br>
+        <div class="row">
+          <h4 class="font-weight-bold">Blogs
+            <hr>
+          </h4>
+        </div>
+        <div class="row">
+          <div class="container">
+            <div *ngIf="showBlog; else showAll">
+              <h3 [id]="blog.id">{{blog.heading}}</h3>
+              <div *ngFor="let detail of blog.detail">
+                <h4>{{detail.subheading}}</h4>
+                <p>{{detail.content}}</p>
+                <div *ngIf="detail.link">
+                  <h5>{{detail.linkheading}}</h5>
+                  <i class="fa fa-link"></i>&nbsp;
+                  <a [href]="detail.link" target="_blank">{{detail.link}}</a>
+                </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="container">
-                 <div *ngIf="showBlog; else showAll">
-                    <h3 [id]="blog.id">{{blog.heading}}</h3>
-                    <div *ngFor="let detail of blog.detail">
-                      <h4>{{detail.subheading}}</h4>
-                      <p>{{detail.content}}</p>
-                    </div>
-                 </div>  
-                 <ng-template #showAll>
-                  <div *ngFor="let blog of blogs">     
-                    <h3 [id]="blog.id">{{blog.heading}}</h3>
-                    <div *ngFor="let detail of blog.detail">
-                      <h4>{{detail.subheading}}</h4>
-                      <p>{{detail.content}}</p>
-                    </div>
-                  </div>
-                </ng-template>
-                </div>    
-            </div>
-          </div>          
+            <ng-template #showAll>
+              <div *ngFor="let blog of blogs">
+                <h3 [id]="blog.id">{{blog.heading}}</h3>
+                <div *ngFor="let detail of blog.detail">
+                  <h4>{{detail.subheading}}</h4>
+                  <p>{{detail.content}}</p>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-sm-3">
-        <div class="container">
-            <br>
-            <div class="row right-rail" [class.fixed] = "fixed">               
-                <h4 class="font-weight-bold">Blog Archives<hr></h4>
+      <div class="container">
+        <br>
+        <div class="row right-rail" [class.fixed]="fixed">
+          <h4 class="font-weight-bold">Blog Archives
+            <hr>
+          </h4>
 
-                <div *ngFor="let blog of blogs">     
-                      <a href="#" (click)="showCurrentBlog(blog)"><p>{{blog.heading}}</p></a>
-                </div>
-            </div>
-        </div>          
+          <div *ngFor="let blog of blogs">
+            <a href="#" (click)="showCurrentBlog(blog)">
+              <p>{{blog.heading}}</p>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

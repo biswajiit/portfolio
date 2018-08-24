@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { BlogService } from './services/blog.service';
 import { ProfileComponent } from './profile/profile.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProfileComponent } from './profile/profile.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [
     BlogService

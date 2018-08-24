@@ -2,6 +2,7 @@ import { Detail } from "./Detail";
 
 export class Blog{
     id:number;
+    date:String;
     heading:String;
     detail:Detail[];
 

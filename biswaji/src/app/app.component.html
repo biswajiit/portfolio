@@ -1,28 +1,30 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <div class="left">      
-          <a class="navbar-brand text-white">
+    <div class="left">
+        <a class="navbar-brand text-white">
             <strong>Biswajit Mishra</strong>
-          </a>      
+        </a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-          </li>
-      </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home">
+                    <i class="fa fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/blogs">
+                    <i class="fa fa-slack"></i> Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-code-fork"></i> Projects</a>
+            </li>
+            
+        </ul>
     </div>
 </nav>
 <header></header>
-<app-profile></app-profile>
-<app-blog-post></app-blog-post>
-
+<router-outlet></router-outlet>
