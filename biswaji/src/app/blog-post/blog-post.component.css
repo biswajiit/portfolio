@@ -1,4 +1,9 @@
 .fixed{
     position: fixed;
-    top :112px;
+}
+.blog{
+    margin-top: 50px;
+}
+.clear-all{
+    clear: both;
 }
