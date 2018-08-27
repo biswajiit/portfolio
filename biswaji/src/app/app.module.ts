@@ -9,6 +9,8 @@ import { BlogService } from './services/blog.service';
 import { ProfileComponent } from './profile/profile.component';
 import { AppRoutingModule } from './/app-routing.module';
 
+import { PaginationModule } from 'ngx-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { AppRoutingModule } from './/app-routing.module';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PaginationModule
   ],
   providers: [
     BlogService
