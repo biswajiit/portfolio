@@ -1,0 +1,44 @@
+<main>
+  <div class="jumbotron text-center">
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-sm-5"></div>
+        <div class="col-sm-2">
+          <div class="profile-pic-outer">
+            <img class="profile-pic" [src]="profile.img">
+          </div>
+        </div>
+        <div class="col-sm-5"></div>
+      </div>
+      <h1 class="jumbotron-heading">{{profile.name}}</h1>
+      <p class="lead">{{profile.detail}}</p>
+      <p class="lead">
+        <i class="fa fa-github"></i>&nbsp;
+        <a [href]="profile.gitLink" target="_blank">{{profile.gitLink}}</a>
+      </p>
+      <p class="lead">
+        <i class="fa fa-linkedin-square"></i>&nbsp;
+        <a [href]="profile.linkedInLink" target="_blank">{{profile.linkedInLink}}</a>
+      </p>
+    </div>
+  </div>
+</main>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-11">
+      <div class="container">
+        <br>
+        <div class="row">
+          <h4 class="font-weight-bold">About Me
+            <hr>
+          </h4>
+        </div>
+        <div class="row" *ngFor="let para of profile.aboutMe">
+          <p> {{para}} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+{
+    "detail": "Senior Java developer.",
+    "name": "Biswajit Mishra",
+    "gitLink": "https://github.com/biswajiit",
+    "linkedInLink": "https://www.linkedin.com/in/biswajit-mishra-55060867/",
+    "img": "../assets/images/avtar.jpg",
+    "aboutMe": [
+        "Hi I'm Biswajit Mishra curently living at Bangalore and working as a java spring-boot consultant for JP Morgan & Chase. I'm a java cloud programing enthusiast and a web-design fanatic. I work with a lot of different technologies ranging from traditional SQL system to microservices cluster. I tend to focus on being fluent on as much technologies and methodology as possible in order to build myself a proper toolbox. This toolbox allows me to find the right tool for the right needs. I am a pragmatic worker focusing on time to market while still giving proper attention to maintainability and refactoring.",
+        "I am a big fan Hollywood movies and vegeterian dishes."
+    ]
+}
