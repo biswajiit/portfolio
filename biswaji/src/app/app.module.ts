@@ -9,7 +9,7 @@ import { BlogService } from './services/blog.service';
 import { ProfileComponent } from './profile/profile.component';
 import { AppRoutingModule } from './/app-routing.module';
 
-import { PaginationModule } from 'ngx-bootstrap';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { PaginationModule } from 'ngx-bootstrap';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    PaginationModule
+    PaginationModule.forRoot()
   ],
   providers: [
     BlogService
