@@ -3,32 +3,21 @@
     <div class="col-sm-1"></div>
     <div class="col-sm-8">
       <div class="container">
-        <br>
         <div class="row">
-          <h4 class="font-weight-bold">Blogs
-            <hr>
-          </h4>
-        </div>
-        <div class="row">
-
-          <div *ngFor="let blog of returnedBlogs">
-            <h3 [id]="blog.id">
-              <a routerLink="/blog/{{blog.id}}">{{blog.heading}}</a>
-            </h3>
+          <div>
+            <h3 class="font-weight-bold" [id]="blog.id"> {{blog.heading}} </h3>
             <span>at {{blog.date}}</span>
-            <p>{{blog.detail[0].content | slice:0:320}}........</p>
+            <div *ngFor="let detail of blog.detail">
+              <p>{{detail.content}}</p>
+            </div>
           </div>
-          <pagination [totalItems]="blogs.length" [itemsPerPage]="itemsPerPage" (pageChanged)="pageChanged($event)"></pagination>
-
-
         </div>
       </div>
     </div>
     <div class="col-sm-3">
       <div class="container-fluid">
-        <br>
         <div class="row fixed">
-          <h4 class="font-weight-bold">Blog Archives
+          <h4 class="font-weight-bold">Related Blogs
             <hr>
           </h4>
 

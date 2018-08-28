@@ -10,12 +10,14 @@ import { ProfileComponent } from './profile/profile.component';
 import { AppRoutingModule } from './/app-routing.module';
 
 import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogPostComponent,
-    ProfileComponent
+    ProfileComponent,
+    BlogDetailComponent
   ],
   imports: [
     BrowserModule,

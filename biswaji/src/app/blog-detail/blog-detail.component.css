@@ -1,0 +1,9 @@
+.fixed{
+    position: fixed;
+}
+.blog{
+    margin-top: 100px;
+}
+.clear-all{
+    clear: both;
+}
