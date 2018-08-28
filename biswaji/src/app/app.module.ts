@@ -11,13 +11,15 @@ import { AppRoutingModule } from './/app-routing.module';
 
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogPostComponent,
     ProfileComponent,
-    BlogDetailComponent
+    BlogDetailComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
