@@ -1,7 +1,6 @@
 <main>
   <div class="jumbotron text-center">
     <div class="container">
-      <br>
       <div class="row">
         <div class="col-sm-5"></div>
         <div class="col-sm-2">
@@ -11,13 +10,13 @@
         </div>
         <div class="col-sm-5"></div>
       </div>
-      <h1 class="jumbotron-heading">{{profile.name}}</h1>
-      <p class="lead">{{profile.detail}}</p>
-      <p class="lead">
+      <h1 class="profile-heading">{{profile.name}}</h1>
+      <p class="lead detail">{{profile.detail}}</p>
+      <p class="lead detail">
         <i class="fa fa-github"></i>&nbsp;
         <a [href]="profile.gitLink" target="_blank">{{profile.gitLink}}</a>
       </p>
-      <p class="lead">
+      <p class="lead detail">
         <i class="fa fa-linkedin-square"></i>&nbsp;
         <a [href]="profile.linkedInLink" target="_blank">{{profile.linkedInLink}}</a>
       </p>
@@ -31,12 +30,12 @@
       <div class="container">
         <br>
         <div class="row">
-          <h4 class="font-weight-bold">About Me
+          <div class="heading">About Me
             <hr>
-          </h4>
+          </div>
         </div>
         <div class="row" *ngFor="let para of profile.aboutMe">
-          <p> {{para}} </p>
+          <p class="detail"> {{para}} </p>
         </div>
       </div>
     </div>

@@ -5,22 +5,21 @@
       <div class="container">
         <br>
         <div class="row">
-          <h4 class="font-weight-bold">Blogs
+          <h4 class="font-weight-bold heading">Blogs
             <hr>
           </h4>
         </div>
         <div class="row">
-
           <div *ngFor="let blog of returnedBlogs">
-            <h3 [id]="blog.id">
+            <h3 [id]="blog.id" class="heading">
               <a routerLink="/blog/{{blog.id}}">{{blog.heading}}</a>
             </h3>
-            <span>at {{blog.date}}</span>
-            <p>{{blog.detail[0].content | slice:0:320}}........</p>
+            <p class="detail">{{blog.detail[0].content | slice:0:320}}........</p>
+            <small class="text-muted">Last updated at {{blog.date}}</small>
           </div>
-          <pagination [totalItems]="blogs.length" [itemsPerPage]="itemsPerPage" (pageChanged)="pageChanged($event)"></pagination>
-
-
+        </div>
+        <div class="row">
+          <pagination class="pagination" [totalItems]="blogs.length" [itemsPerPage]="itemsPerPage" (pageChanged)="pageChanged($event)"></pagination>
         </div>
       </div>
     </div>
@@ -28,14 +27,11 @@
       <div class="container-fluid">
         <br>
         <div class="row fixed">
-          <h4 class="font-weight-bold">Blog Archives
+          <div class="heading-archives">Blog Archives
             <hr>
-          </h4>
-
+          </div>
           <div *ngFor="let blog of blogs">
-            <a href="#" (click)="showCurrentBlog(blog)">
-              <p>{{blog.heading}}</p>
-            </a>
+            <p><a routerLink="/blog/{{blog.id}}">{{blog.heading}}</a></p>
           </div>
         </div>
       </div>

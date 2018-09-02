@@ -5,14 +5,14 @@
         "date": "24-Aug-2018",
         "detail": [
             {
-                "subheading": "",
+                "subheading": "Overview",
                 "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Risus viverra adipiscing at in tellus integer feugiat. Netus et malesuada fames ac turpis egestas sed tempus urna. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Dolor morbi non arcu risus quis varius quam. Nisl suscipit adipiscing bibendum est ultricies integer. Sed viverra tellus in hac. Massa ultricies mi quis hendrerit. Nibh cras pulvinar mattis nunc sed blandit libero. Volutpat sed cras ornare arcu dui vivamus. Amet justo donec enim diam vulputate ut. Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Volutpat odio facilisis mauris sit amet. Amet est placerat in egestas erat. Mattis pellentesque id nibh tortor. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Tortor condimentum lacinia quis vel eros donec. Luctus venenatis lectus",
-                "img": "../assets/images/avtar.jpg",
+                "img": "avtar.jpg",
                 "linkheading": "For more on Google pleaase visit",
                 "link": "http://www.google.com"
             },
             {
-                "subheading": "",
+                "subheading": "Detail",
                 "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Risus viverra adipiscing at in tellus integer feugiat. Netus et malesuada fames ac turpis egestas sed tempus urna. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Dolor morbi non arcu risus quis varius quam. Nisl suscipit adipiscing bibendum est ultricies integer. Sed viverra tellus in hac. Massa ultricies mi quis hendrerit. Nibh cras pulvinar mattis nunc sed blandit libero. Volutpat sed cras ornare arcu dui vivamus. Amet justo donec enim diam vulputate ut. Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Volutpat odio facilisis mauris sit amet. Amet est placerat in egestas erat. Mattis pellentesque id nibh tortor. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Tortor condimentum lacinia quis vel eros donec. Luctus venenatis lectus",
                 "img": "",
                 "link": ""
@@ -21,7 +21,7 @@
     },
     {
         "id": 2,
-        "heading": "2 New Tools to help with AngularJS to Angular Migrations",
+        "heading": "blog2",
         "date": "24-Aug-2018",
         "detail": [
             {
@@ -43,7 +43,7 @@
     },
     {
         "id": 3,
-        "heading": "2 New Tools to help with AngularJS to Angular Migrations",
+        "heading": "blog3",
         "date": "24-Aug-2018",
         "detail": [
             {

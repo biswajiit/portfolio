@@ -11,7 +11,7 @@ import { PageChangedEvent } from 'ngx-bootstrap/pagination';
 export class BlogPostComponent implements OnInit {
 
   @Output() onShowBlog = new EventEmitter();
-  itemsPerPage: number = 1;
+  itemsPerPage: number = 5;
   showBlog: Boolean = false;
   blogs: Blog[] = [];
   returnedBlogs: Blog[];

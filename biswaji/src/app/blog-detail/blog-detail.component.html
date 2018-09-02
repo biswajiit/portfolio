@@ -2,13 +2,36 @@
   <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-8">
-      <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-10">
+            <button type="button" class="btn btn-link" (click)="goBack()">Back</button>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-outline-primary" (click)="nextBlog()">
+              <i class="fa fa-arrow-left"></i>
+            </button>
+            <button type="button" class="btn btn-outline-primary" (click)="prevBlog()">
+              <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
         <div class="row">
           <div>
-            <h3 class="font-weight-bold" [id]="blog.id"> {{blog.heading}} </h3>
-            <span>at {{blog.date}}</span>
-            <div *ngFor="let detail of blog.detail">
-              <p>{{detail.content}}</p>
+            <h3 class="font-weight-bold heading" [id]="blog.id"> {{blog.heading}} </h3>
+            <small class="text-muted">Last updated at {{blog.date}}</small>
+            <hr>
+            <div *ngFor="let detail of blog.detail" class="detail">
+              <h4 class="font-weight-bold heading-archives" *ngIf="detail.subheading">{{detail.subheading}}</h4>
+              <p *ngIf="detail.content">{{detail.content}}</p>
+
+              <div class="text-success font-weight-bold" *ngIf="detail.link">
+                <span *ngIf="detail.linkheading">{{detail.linkheading}} : </span>
+                <a href="{{detail.link}}}">{{detail.link}}</a>
+              </div>
+              <br>
+              <img class="img-fluid" src="assets/images/blogs/{{detail.img}}" *ngIf="detail.img">
+
             </div>
           </div>
         </div>
@@ -17,7 +40,7 @@
     <div class="col-sm-3">
       <div class="container-fluid">
         <div class="row fixed">
-          <h4 class="font-weight-bold">Related Blogs
+          <h4 class="font-weight-bold heading-archives">Related Blogs
             <hr>
           </h4>
 
